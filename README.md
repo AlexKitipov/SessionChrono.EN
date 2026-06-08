@@ -66,6 +66,7 @@ Dark UI theme
 
 Clean, minimal, and comfortable for long sessions.
 
+![SessionChrono Screenshot 1](https://raw.githubusercontent.com/AlexKitipov/SessionChrono.EN/main/JPEG%20image/IMG_20260608_161315.jpg)
 
 
 📁 Log Structure
