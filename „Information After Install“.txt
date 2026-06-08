@@ -1,0 +1,7 @@
+SessionChrono has been successfully installed.
+
+You can now launch the application from the Start Menu or desktop shortcut.
+
+Thank you for using SessionChrono.
+
+Built with support from Microsoft Copilot.

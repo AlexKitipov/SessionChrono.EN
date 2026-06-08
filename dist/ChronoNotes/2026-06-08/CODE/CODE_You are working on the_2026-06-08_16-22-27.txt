@@ -1,0 +1,56 @@
+You are working on the AeterOS project. I am now authorizing you to perform a full aggressive cleanup and refactor across the entire workspace.
+
+Your goal is to eliminate ALL warnings, even if this requires architectural changes, deep refactors, or redesigning unsafe patterns.
+
+You are allowed to modify ANY part of the codebase, including:
+- kernel code
+- allocators
+- static mutable memory patterns
+- V-Node heaps
+- runtime loops
+- IPC structures
+- system services
+- scheduler logic
+- memory management
+- unsafe blocks
+- module APIs
+- crate boundaries
+- architectural patterns
+
+You may:
+- replace `static mut` with safer patterns (Mutex, spinlocks, OnceCell, lazy_static, custom primitives)
+- redesign allocator initialization
+- rewrite V-Node runtime loops
+- restructure modules
+- remove or rewrite dead code
+- change function signatures
+- reorganize crates
+- introduce new abstractions
+- apply Clippy suggestions even if they require logic changes
+- migrate code to Rust 2024 idioms
+- rewrite unsafe code into safe equivalents where possible
+- redesign IPC or memory models if needed
+
+You must:
+- ensure the system still compiles
+- ensure the system still boots (as far as possible)
+- ensure the refactor is consistent and complete
+- produce a patch (diff) with all changes
+
+Steps:
+
+1. Install Clippy:
+   rustup component add clippy
+
+2. Run deep analysis:
+   cargo clippy --all-targets --all-features -- -W clippy::all -W clippy::pedantic
+
+3. Apply ALL fixes required to eliminate warnings, even if they require architectural changes.
+
+4. After completing the refactor, generate a full patch (diff) that I can apply.
+
+5. If a subsystem must be redesigned to remove warnings, redesign it.
+
+Goal: Zero warnings. Maximum code quality. Full modernization. No restrictions.
+
+Begin now.

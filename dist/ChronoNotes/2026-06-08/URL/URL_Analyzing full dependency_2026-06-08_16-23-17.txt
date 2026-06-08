@@ -1,0 +1,371 @@
+Analyzing full dependency tree for the kernel with all features...
+aetheros-kernel v0.1.0 (/content/Aether_OS_Nexus_Core_v.0.3/AetherOS/kernel)
++-- bootloader_api v0.11.15
++-- conquer-once v0.4.0
+¦   L-- conquer-util feature "back-off"
+¦       L-- conquer-util v0.3.0
++-- sha2 v0.10.9
+¦   +-- cfg-if feature "default"
+¦   ¦   L-- cfg-if v1.0.4
+¦   +-- cpufeatures feature "default"
+¦   ¦   L-- cpufeatures v0.2.17
+¦   L-- digest feature "default"
+¦       +-- digest v0.10.7
+¦       ¦   +-- block-buffer feature "default"
+¦       ¦   ¦   L-- block-buffer v0.10.4
+¦       ¦   ¦       L-- generic-array feature "default"
+¦       ¦   ¦           L-- generic-array v0.14.7
+¦       ¦   ¦               L-- typenum feature "default"
+¦       ¦   ¦                   L-- typenum v1.19.0
+¦       ¦   ¦               [build-dependencies]
+¦       ¦   ¦               L-- version_check feature "default"
+¦       ¦   ¦                   L-- version_check v0.9.5
+¦       ¦   L-- crypto-common feature "default"
+¦       ¦       L-- crypto-common v0.1.7
+¦       ¦           +-- generic-array feature "default" (*)
+¦       ¦           +-- generic-array feature "more_lengths"
+¦       ¦           ¦   L-- generic-array v0.14.7 (*)
+¦       ¦           L-- typenum feature "default" (*)
+¦       L-- digest feature "core-api"
+¦           +-- digest v0.10.7 (*)
+¦           L-- digest feature "block-buffer"
+¦               L-- digest v0.10.7 (*)
++-- aetheros_common feature "alloc"
+¦   L-- aetheros_common v0.1.0 (/content/Aether_OS_Nexus_Core_v.0.3/AetherOS/common)
+¦       +-- libnexus-net v0.1.0 (/content/Aether_OS_Nexus_Core_v.0.3/AetherOS/libnexus-net)
+¦       +-- serde feature "alloc"
+¦       ¦   +-- serde v1.0.228
+¦       ¦   ¦   +-- serde_core feature "result"
+¦       ¦   ¦   ¦   L-- serde_core v1.0.228
+¦       ¦   ¦   L-- serde_derive feature "default"
+¦       ¦   ¦       L-- serde_derive v1.0.228 (proc-macro)
+¦       ¦   ¦           +-- proc-macro2 feature "proc-macro"
+¦       ¦   ¦           ¦   L-- proc-macro2 v1.0.106
+¦       ¦   ¦           ¦       L-- unicode-ident feature "default"
+¦       ¦   ¦           ¦           L-- unicode-ident v1.0.24
+¦       ¦   ¦           +-- quote feature "proc-macro"
+¦       ¦   ¦           ¦   +-- quote v1.0.45
+¦       ¦   ¦           ¦   ¦   L-- proc-macro2 v1.0.106 (*)
+¦       ¦   ¦           ¦   L-- proc-macro2 feature "proc-macro" (*)
+¦       ¦   ¦           +-- syn feature "clone-impls"
+¦       ¦   ¦           ¦   L-- syn v2.0.117
+¦       ¦   ¦           ¦       +-- proc-macro2 v1.0.106 (*)
+¦       ¦   ¦           ¦       +-- quote v1.0.45 (*)
+¦       ¦   ¦           ¦       L-- unicode-ident feature "default" (*)
+¦       ¦   ¦           +-- syn feature "derive"
+¦       ¦   ¦           ¦   L-- syn v2.0.117 (*)
+¦       ¦   ¦           +-- syn feature "parsing"
+¦       ¦   ¦           ¦   L-- syn v2.0.117 (*)
+¦       ¦   ¦           +-- syn feature "printing"
+¦       ¦   ¦           ¦   L-- syn v2.0.117 (*)
+¦       ¦   ¦           L-- syn feature "proc-macro"
+¦       ¦   ¦               +-- syn v2.0.117 (*)
+¦       ¦   ¦               +-- proc-macro2 feature "proc-macro" (*)
+¦       ¦   ¦               L-- quote feature "proc-macro" (*)
+¦       ¦   L-- serde_core feature "alloc"
+¦       ¦       L-- serde_core v1.0.228
+¦       L-- serde feature "derive"
+¦           +-- serde v1.0.228 (*)
+¦           L-- serde feature "serde_derive"
+¦               L-- serde v1.0.228 (*)
++-- aetheros_common feature "serde"
+¦   L-- aetheros_common v0.1.0 (/content/Aether_OS_Nexus_Core_v.0.3/AetherOS/common) (*)
++-- serde feature "alloc" (*)
++-- serde feature "derive" (*)
++-- bootloader feature "default"
+¦   +-- bootloader v0.11.15
+¦   ¦   +-- anyhow feature "default"
+¦   ¦   ¦   +-- anyhow v1.0.102
+¦   ¦   ¦   L-- anyhow feature "std"
+¦   ¦   ¦       L-- anyhow v1.0.102
+¦   ¦   +-- bootloader-boot-config feature "default"
+¦   ¦   ¦   L-- bootloader-boot-config v0.11.15
+¦   ¦   ¦       L-- serde feature "derive" (*)
+¦   ¦   +-- fatfs feature "alloc"
+¦   ¦   ¦   L-- fatfs v0.3.6
+¦   ¦   ¦       +-- byteorder v1.5.0
+¦   ¦   ¦       +-- bitflags feature "default"
+¦   ¦   ¦       ¦   L-- bitflags v1.3.2
+¦   ¦   ¦       L-- log feature "default"
+¦   ¦   ¦           L-- log v0.4.29
+¦   ¦   +-- fatfs feature "std"
+¦   ¦   ¦   +-- fatfs v0.3.6 (*)
+¦   ¦   ¦   L-- byteorder feature "std"
+¦   ¦   ¦       L-- byteorder v1.5.0
+¦   ¦   +-- gpt feature "default"
+¦   ¦   ¦   L-- gpt v3.1.0
+¦   ¦   ¦       +-- log feature "default" (*)
+¦   ¦   ¦       +-- bitflags feature "default"
+¦   ¦   ¦       ¦   L-- bitflags v2.11.0
+¦   ¦   ¦       +-- crc feature "default"
+¦   ¦   ¦       ¦   L-- crc v3.4.0
+¦   ¦   ¦       ¦       L-- crc-catalog feature "default"
+¦   ¦   ¦       ¦           L-- crc-catalog v2.4.0
+¦   ¦   ¦       +-- uuid feature "default"
+¦   ¦   ¦       ¦   +-- uuid v1.23.0
+¦   ¦   ¦       ¦   ¦   L-- getrandom feature "default"
+¦   ¦   ¦       ¦   ¦       L-- getrandom v0.4.2
+¦   ¦   ¦       ¦   ¦           +-- libc v0.2.184
+¦   ¦   ¦       ¦   ¦           L-- cfg-if feature "default" (*)
+¦   ¦   ¦       ¦   L-- uuid feature "std"
+¦   ¦   ¦       ¦       L-- uuid v1.23.0 (*)
+¦   ¦   ¦       L-- uuid feature "v4"
+¦   ¦   ¦           +-- uuid v1.23.0 (*)
+¦   ¦   ¦           L-- uuid feature "rng"
+¦   ¦   ¦               L-- uuid v1.23.0 (*)
+¦   ¦   +-- mbrman feature "default"
+¦   ¦   ¦   L-- mbrman v0.5.4
+¦   ¦   ¦       +-- serde feature "default"
+¦   ¦   ¦       ¦   +-- serde v1.0.228 (*)
+¦   ¦   ¦       ¦   L-- serde feature "std"
+¦   ¦   ¦       ¦       +-- serde v1.0.228 (*)
+¦   ¦   ¦       ¦       L-- serde_core feature "std"
+¦   ¦   ¦       ¦           L-- serde_core v1.0.228
+¦   ¦   ¦       +-- serde feature "derive" (*)
+¦   ¦   ¦       +-- bincode feature "default"
+¦   ¦   ¦       ¦   L-- bincode v1.3.3
+¦   ¦   ¦       ¦       L-- serde feature "default" (*)
+¦   ¦   ¦       +-- bitvec feature "default"
+¦   ¦   ¦       ¦   +-- bitvec v1.0.1
+¦   ¦   ¦       ¦   ¦   +-- funty v2.0.0
+¦   ¦   ¦       ¦   ¦   +-- wyz v0.5.1
+¦   ¦   ¦       ¦   ¦   ¦   L-- tap feature "default"
+¦   ¦   ¦       ¦   ¦   ¦       L-- tap v1.0.1
+¦   ¦   ¦       ¦   ¦   +-- radium feature "default"
+¦   ¦   ¦       ¦   ¦   ¦   L-- radium v0.7.0
+¦   ¦   ¦       ¦   ¦   L-- tap feature "default" (*)
+¦   ¦   ¦       ¦   +-- bitvec feature "atomic"
+¦   ¦   ¦       ¦   ¦   L-- bitvec v1.0.1 (*)
+¦   ¦   ¦       ¦   L-- bitvec feature "std"
+¦   ¦   ¦       ¦       +-- bitvec v1.0.1 (*)
+¦   ¦   ¦       ¦       L-- bitvec feature "alloc"
+¦   ¦   ¦       ¦           L-- bitvec v1.0.1 (*)
+¦   ¦   ¦       +-- serde-big-array feature "default"
+¦   ¦   ¦       ¦   L-- serde-big-array v0.5.1
+¦   ¦   ¦       ¦       L-- serde v1.0.228 (*)
+¦   ¦   ¦       L-- thiserror feature "default"
+¦   ¦   ¦           L-- thiserror v1.0.69
+¦   ¦   ¦               L-- thiserror-impl feature "default"
+¦   ¦   ¦                   L-- thiserror-impl v1.0.69 (proc-macro)
+¦   ¦   ¦                       +-- proc-macro2 feature "default"
+¦   ¦   ¦                       ¦   +-- proc-macro2 v1.0.106 (*)
+¦   ¦   ¦                       ¦   L-- proc-macro2 feature "proc-macro" (*)
+¦   ¦   ¦                       +-- quote feature "default"
+¦   ¦   ¦                       ¦   +-- quote v1.0.45 (*)
+¦   ¦   ¦                       ¦   L-- quote feature "proc-macro" (*)
+¦   ¦   ¦                       L-- syn feature "default"
+¦   ¦   ¦                           +-- syn v2.0.117 (*)
+¦   ¦   ¦                           +-- syn feature "clone-impls" (*)
+¦   ¦   ¦                           +-- syn feature "derive" (*)
+¦   ¦   ¦                           +-- syn feature "parsing" (*)
+¦   ¦   ¦                           +-- syn feature "printing" (*)
+¦   ¦   ¦                           L-- syn feature "proc-macro" (*)
+¦   ¦   +-- serde_json feature "default"
+¦   ¦   ¦   +-- serde_json v1.0.149
+¦   ¦   ¦   ¦   +-- memchr v2.8.0
+¦   ¦   ¦   ¦   +-- serde_core v1.0.228
+¦   ¦   ¦   ¦   +-- itoa feature "default"
+¦   ¦   ¦   ¦   ¦   L-- itoa v1.0.18
+¦   ¦   ¦   ¦   L-- zmij feature "default"
+¦   ¦   ¦   ¦       L-- zmij v1.0.21
+¦   ¦   ¦   L-- serde_json feature "std"
+¦   ¦   ¦       +-- serde_json v1.0.149 (*)
+¦   ¦   ¦       +-- serde_core feature "std" (*)
+¦   ¦   ¦       L-- memchr feature "std"
+¦   ¦   ¦           +-- memchr v2.8.0
+¦   ¦   ¦           L-- memchr feature "alloc"
+¦   ¦   ¦               L-- memchr v2.8.0
+¦   ¦   L-- tempfile feature "default"
+¦   ¦       +-- tempfile v3.27.0
+¦   ¦       ¦   +-- getrandom v0.4.2 (*)
+¦   ¦       ¦   +-- fastrand feature "default"
+¦   ¦       ¦   ¦   +-- fastrand v2.4.1
+¦   ¦       ¦   ¦   L-- fastrand feature "std"
+¦   ¦       ¦   ¦       +-- fastrand v2.4.1
+¦   ¦       ¦   ¦       L-- fastrand feature "alloc"
+¦   ¦       ¦   ¦           L-- fastrand v2.4.1
+¦   ¦       ¦   +-- once_cell feature "std"
+¦   ¦       ¦   ¦   +-- once_cell v1.21.4
+¦   ¦       ¦   ¦   L-- once_cell feature "alloc"
+¦   ¦       ¦   ¦       +-- once_cell v1.21.4
+¦   ¦       ¦   ¦       L-- once_cell feature "race"
+¦   ¦       ¦   ¦           L-- once_cell v1.21.4
+¦   ¦       ¦   +-- rustix feature "default"
+¦   ¦       ¦   ¦   +-- rustix v1.1.4
+¦   ¦       ¦   ¦   ¦   +-- bitflags v2.11.0
+¦   ¦       ¦   ¦   ¦   +-- linux-raw-sys feature "auxvec"
+¦   ¦       ¦   ¦   ¦   ¦   L-- linux-raw-sys v0.12.1
+¦   ¦       ¦   ¦   ¦   +-- linux-raw-sys feature "elf"
+¦   ¦       ¦   ¦   ¦   ¦   L-- linux-raw-sys v0.12.1
+¦   ¦       ¦   ¦   ¦   +-- linux-raw-sys feature "errno"
+¦   ¦       ¦   ¦   ¦   ¦   L-- linux-raw-sys v0.12.1
+¦   ¦       ¦   ¦   ¦   +-- linux-raw-sys feature "general"
+¦   ¦       ¦   ¦   ¦   ¦   L-- linux-raw-sys v0.12.1
+¦   ¦       ¦   ¦   ¦   +-- linux-raw-sys feature "ioctl"
+¦   ¦       ¦   ¦   ¦   ¦   L-- linux-raw-sys v0.12.1
+¦   ¦       ¦   ¦   ¦   L-- linux-raw-sys feature "no_std"
+¦   ¦       ¦   ¦   ¦       L-- linux-raw-sys v0.12.1
+¦   ¦       ¦   ¦   L-- rustix feature "std"
+¦   ¦       ¦   ¦       +-- rustix v1.1.4 (*)
+¦   ¦       ¦   ¦       +-- bitflags feature "std"
+¦   ¦       ¦   ¦       ¦   L-- bitflags v2.11.0
+¦   ¦       ¦   ¦       L-- rustix feature "alloc"
+¦   ¦       ¦   ¦           L-- rustix v1.1.4 (*)
+¦   ¦       ¦   L-- rustix feature "fs"
+¦   ¦       ¦       L-- rustix v1.1.4 (*)
+¦   ¦       L-- tempfile feature "getrandom"
+¦   ¦           L-- tempfile v3.27.0 (*)
+¦   ¦   [build-dependencies]
+¦   ¦   L-- llvm-tools feature "default"
+¦   ¦       L-- llvm-tools v0.1.1
+¦   +-- bootloader feature "bios"
+¦   ¦   L-- bootloader v0.11.15 (*)
+¦   L-- bootloader feature "uefi"
+¦       L-- bootloader v0.11.15 (*)
++-- linked_list_allocator feature "use_spin"
+¦   +-- linked_list_allocator v0.10.5
+¦   ¦   L-- spinning_top feature "default"
+¦   ¦       L-- spinning_top v0.2.5
+¦   ¦           L-- lock_api feature "default"
+¦   ¦               +-- lock_api v0.4.14
+¦   ¦               ¦   L-- scopeguard v1.2.0
+¦   ¦               L-- lock_api feature "atomic_usize"
+¦   ¦                   L-- lock_api v0.4.14 (*)
+¦   L-- linked_list_allocator feature "spinning_top"
+¦       L-- linked_list_allocator v0.10.5 (*)
++-- postcard feature "alloc"
+¦   +-- postcard v1.1.3
+¦   ¦   +-- cobs v0.3.0
+¦   ¦   ¦   L-- thiserror v2.0.18
+¦   ¦   ¦       L-- thiserror-impl feature "default"
+¦   ¦   ¦           L-- thiserror-impl v2.0.18 (proc-macro)
+¦   ¦   ¦               +-- proc-macro2 feature "default" (*)
+¦   ¦   ¦               +-- quote feature "default" (*)
+¦   ¦   ¦               L-- syn feature "default" (*)
+¦   ¦   L-- serde feature "derive" (*)
+¦   L-- serde feature "alloc" (*)
++-- spin feature "barrier"
+¦   +-- spin v0.9.8
+¦   L-- spin feature "mutex"
+¦       L-- spin v0.9.8
++-- spin feature "lazy"
+¦   +-- spin v0.9.8
+¦   L-- spin feature "once"
+¦       L-- spin v0.9.8
++-- spin feature "mutex" (*)
++-- spin feature "once" (*)
++-- spin feature "rwlock"
+¦   L-- spin v0.9.8
++-- spin feature "spin_mutex"
+¦   +-- spin v0.9.8
+¦   L-- spin feature "mutex" (*)
++-- x86_64 feature "abi_x86_interrupt"
+¦   L-- x86_64 v0.14.13
+¦       +-- bitflags feature "default" (*)
+¦       +-- bit_field feature "default"
+¦       ¦   L-- bit_field v0.10.3
+¦       +-- rustversion feature "default"
+¦       ¦   L-- rustversion v1.0.22 (proc-macro)
+¦       L-- volatile feature "default"
+¦           L-- volatile v0.4.6
+L-- x86_64 feature "instructions"
+    L-- x86_64 v0.14.13 (*)
+Dependency feature analysis finished.
+
+Проблемът: -Z features=all насилва всички features, включително std, дори да си задал default-features = false в Cargo.toml.
+
+Ефектът: serde_derive пак вдига std > serde_core пак става със std > no_std ад + bootloader скрипт паник.
+
+Решението: махаш -Z features=all, оставяш само това, което ти трябва.
+
+Примерно командата да изглежда така:
+
+bash
+cargo 
+bootimage --target aetheros-x86_64.json --release
+(или както ти е таргетът, но без -Z features=all).
+
+След това, ако искаш да провериш, че всичко е чисто:
+
+bash
+cargo tree -e features | grep serde_core
+Трябва да виждаш alloc, result, но не std.
+
+ warning: `uefi` (lib) generated 10 warnings
+     Compiling bootloader-x86_64-uefi v0.11.15
+       Running `CARGO=/root/.rustup/toolchains/nightly-2024-12-01-x86_64-unknown-linux-gnu/bin/cargo CARGO_BIN_NAME=bootloader-x86_64-uefi CARGO_CRATE_NAME=bootloader_x86_64_uefi CARGO_MANIFEST_DIR=/root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bootloader-x86_64-uefi-0.11.15 CARGO_MANIFEST_PATH=/root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bootloader-x86_64-uefi-0.11.15/Cargo.toml CARGO_PKG_AUTHORS='' CARGO_PKG_DESCRIPTION='UEFI bootloader for x86_64' CARGO_PKG_HOMEPAGE='' CARGO_PKG_LICENSE='MIT OR Apache-2.0' CARGO_PKG_LICENSE_FILE='' CARGO_PKG_NAME=bootloader-x86_64-uefi CARGO_PKG_README=README.md CARGO_PKG_REPOSITORY='https://github.com/rust-osdev/bootloader' CARGO_PKG_RUST_VERSION='' CARGO_PKG_VERSION=0.11.15 CARGO_PKG_VERSION_MAJOR=0 CARGO_PKG_VERSION_MINOR=11 CARGO_PKG_VERSION_PATCH=15 CARGO_PKG_VERSION_PRE='' CARGO_PRIMARY_PACKAGE=1 LD_LIBRARY_PATH='/tmp/cargo-installGuiIUB/release/deps:/content/Aether_OS_Nexus_Core_v.0.3/AetherOS/target/release/deps:/content/Aether_OS_Nexus_Core_v.0.3/AetherOS/target/release:/root/.rustup/toolchains/nightly-2024-12-01-x86_64-unknown-linux-gnu/lib' /root/.rustup/toolchains/nightly-2024-12-01-x86_64-unknown-linux-gnu/bin/rustc --crate-name bootloader_x86_64_uefi --edition=2024 /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bootloader-x86_64-uefi-0.11.15/src/main.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C opt-level=3 -C embed-bitcode=no --check-cfg 'cfg(docsrs)' --check-cfg 'cfg(feature, values())' -C metadata=f3b009826b6fe96e -C extra-filename=-f3b009826b6fe96e --out-dir /tmp/cargo-installGuiIUB/x86_64-unknown-uefi/release/deps --target x86_64-unknown-uefi -C strip=debuginfo -L dependency=/tmp/cargo-installGuiIUB/x86_64-unknown-uefi/release/deps -L dependency=/tmp/cargo-installGuiIUB/release/deps --extern bootloader_boot_config=/tmp/cargo-installGuiIUB/x86_64-unknown-uefi/release/deps/libbootloader_boot_config-818f576e1556c332.rlib --extern bootloader_x86_64_common=/tmp/cargo-installGuiIUB/x86_64-unknown-uefi/release/deps/libbootloader_x86_64_common-006322645ec60bc9.rlib --extern bootloader_api=/tmp/cargo-installGuiIUB/x86_64-unknown-uefi/release/deps/libbootloader_api-66c11eeadab85942.rlib --extern 'noprelude:compiler_builtins=/tmp/cargo-installGuiIUB/x86_64-unknown-uefi/release/deps/libcompiler_builtins-d9ab4d072ea24ea3.rlib' --extern 'noprelude:core=/tmp/cargo-installGuiIUB/x86_64-unknown-uefi/release/deps/libcore-75eda950588ba6dd.rlib' --extern log=/tmp/cargo-installGuiIUB/x86_64-unknown-uefi/release/deps/liblog-6fd8defcd33e3a5c.rlib --extern serde_json_core=/tmp/cargo-installGuiIUB/x86_64-unknown-uefi/release/deps/libserde_json_core-180067f68c7591c3.rlib --extern uefi=/tmp/cargo-installGuiIUB/x86_64-unknown-uefi/release/deps/libuefi-307518ed0c5d736d.rlib --extern x86_64=/tmp/cargo-installGuiIUB/x86_64-unknown-uefi/release/deps/libx86_64-38d61321ee0b58fd.rlib -Z unstable-options --cap-lints warn`
+      Finished `release` profile [optimized] target(s) in 1m 09s
+  warning: the following packages contain code that will be rejected by a future version of Rust: compiler_builtins v0.1.138
+  note: to see what the problems were, use the option `--future-incompat-report`, or run `cargo report future-incompatibilities --id 1`
+    Installing /content/Aether_OS_Nexus_Core_v.0.3/AetherOS/target/aetheros-x86_64/release/build/bootloader-244ed8bdb8707f10/out/bin/bootloader-x86_64-uefi.efi
+     Installed package `bootloader-x86_64-uefi v0.11.15` (executable `bootloader-x86_64-uefi.efi`)
+  warning: be sure to add `/content/Aether_OS_Nexus_Core_v.0.3/AetherOS/target/aetheros-x86_64/release/build/bootloader-244ed8bdb8707f10/out/bin` to your PATH to be able to run the installed binaries
+  thread 'main' panicked at /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bootloader-0.11.15/build.rs:17:29:
+  called `Result::unwrap()` on an `Err` value: Any { .. }
+  stack backtrace:
+     0: rust_begin_unwind
+     1: core::panicking::panic_fmt
+     2: core::result::unwrap_failed
+     3: build_script_build::main
+     4: core::ops::function::FnOnce::call_once
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+Error: Kernel build failed.
+Stderr: 
+
+Stack backtrace:
+   0: anyhow::error::<impl core::convert::From<E> for anyhow::Error>::from
+   1: cargo_bootimage::build
+   2: cargo_bootimage::main
+   3: std::sys::backtrace::__rust_begin_short_backtrace
+   4: std::rt::lang_start::{{closure}}
+   5: std::rt::lang_start_internal
+   6: main
+   7: <unknown>
+   8: __libc_start_main
+   9: _start
+Kernel build attempt finished.
+
+========================================================================================================
+
+I can see the issue clearly from the error logs you've provided. Let me analyze this and help you fix it.Now let me check the build script and the bootloader configuration:I've identified the issue. The problem is in your workspace-level `Cargo.toml`. On line 31, you have:
+
+```toml
+bootloader = { version = "=0.11.15" }
+```
+
+This declaration **does not explicitly disable default features**, which means `bootloader` and its transitive dependencies (including `serde` and others) are being compiled with their default features enabled. This introduces `std` into the build chain, breaking your `no_std` kernel build.
+
+## The Fix
+
+Update the workspace dependencies in `AetherOS/Cargo.toml`:
+
+```toml
+[workspace.dependencies]
+serde_core = { version = "1.0", default-features = false, features = ["alloc"] }
+bootloader = { version = "=0.11.15", default-features = false }  # < ADD THIS LINE
+bootloader_api = { version = "=0.11.15", default-features = false }
+postcard = { version = "=1.1.3", default-features = false, features = ["alloc"] }
+linked_list_allocator = { version = "=0.10.5", default-features = false, features = ["use_spin"] }
+x86_64 = { version = "=0.14.13", default-features = false, features = ["instructions", "abi_x86_interrupt"] }
+spin = { version = "=0.9.8", default-features = false, features = ["mutex", "spin_mutex", "rwlock", "once", "lazy", "barrier"] }
+conquer-once = { version = "=0.4.0", default-features = false }
+sha2 = { version = "=0.10.9", default-features = false }
+smoltcp = { version = "=0.8.2", default-features = false, features = ["alloc", "proto-ipv4"] }
+getrandom = { version = "=0.4.2", default-features = false, features = ["rdrand"] }
+serde = { version = "1.0.193", default-features = false, features = ["alloc", "derive"] }
+```
+
+## Verification
+
+After updating, run:
+```bash
+cargo clean
+cargo tree -e features --target aetheros-x86_64.json 2>/dev/null | grep -E "(std|serde_core)" | head -20
+```
+
+You should NOT see `std` in the output. Then rebuild:
+```bash
+cargo bootimage --target aetheros-x86_64.json --release
+```
+
+The issue was that `bootloader` v0.11.15 has default features enabled by default, which transitively enabled `std` on `serde_core` > `serde_derive`, breaking your `no_std` environment.

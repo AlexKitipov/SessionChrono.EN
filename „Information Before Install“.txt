@@ -1,0 +1,9 @@
+SessionChrono is a lightweight clipboard history manager designed to help you track, organize, and archive your copied text.
+
+This installer will guide you through the setup process.
+
+By continuing, you agree to install SessionChrono on your device.
+
+Built with support from Microsoft Copilot.
+
+
