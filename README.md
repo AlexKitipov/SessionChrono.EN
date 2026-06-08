@@ -7,7 +7,7 @@ SessionChrono
 
 
 👉 Download the installer:
-
+[⬇️ Download SessionChrono Setup](https://github.com/AlexKitipov/SessionChrono.EN/raw/main/SessionChrono%20Setup.zip)
 Click here to download SessionChrono Setup
 
 
