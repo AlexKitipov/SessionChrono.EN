@@ -14,6 +14,7 @@ Click here to download SessionChrono Setup
 
 A smart clipboard‑logging notepad that automatically saves copied text into categorized files with timestamps. Includes a built‑in editor, history panel, search, ZIP archiving, sound alerts, and daily log organization. A fast and minimal tool for developers and creators.
 
+![SessionChrono Screenshot 1](https://raw.githubusercontent.com/AlexKitipov/SessionChrono.EN/main/JPEG%20image/IMG_20260608_161216.jpg)
 
 
 ✨ Features
