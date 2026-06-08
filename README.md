@@ -48,7 +48,7 @@ Daily ZIP archiving
 
 Create a compressed archive of all logs for the current day.
 
-
+![SessionChrono Screenshot 3](https://github.com/AlexKitipov/SessionChrono.EN/blob/main/JPEG%20image/IMG_20260608_161301.jpg)
 
 Search across all logs
 
