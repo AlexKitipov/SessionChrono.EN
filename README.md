@@ -3,6 +3,9 @@ SessionChrono is a smart clipboard‑logging notepad that automatically saves co
 
 SessionChrono
 
+![SessionChrono Icon](https://raw.githubusercontent.com/AlexKitipov/SessionChrono.EN/main/SessionChrono.png)
+
+
 👉 Download the installer:
 
 Click here to download SessionChrono Setup
