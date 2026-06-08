@@ -23,6 +23,7 @@ Automatic clipboard logging
 
 Every copied text is instantly saved into a structured folder system by date and category.
 
+![SessionChrono Screenshot 2](https://github.com/AlexKitipov/SessionChrono.EN/blob/main/JPEG%20image/IMG_20260608_161245.jpg)
 
 
 Smart text classification
